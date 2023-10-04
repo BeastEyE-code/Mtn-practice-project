@@ -51,7 +51,7 @@
     .sideBar {
       display: flex;
       align-items: center;
-      height: 100vh;
+      height: 150vh;
       width: 120px;
     }
     .sideBarIcons {
@@ -72,17 +72,21 @@
       border: solid 1px rgba(116, 110, 110, 0.474);
       border-radius: 10px;
     }
-    .cardText{
+    .cardText {
       font-size: 12px;
     }
-    .cardText2{
+    .cardText2 {
       font-size: 10px;
     }
-    .card-title{
+    .card-title {
       font-size: 15px;
     }
-    .cards{
+    .cards {
       border-radius: 30rem;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 350px) {
     }
   </style>
   <body>
@@ -107,9 +111,9 @@
     </div>
 
     <!--  sidebar            -->
-    <section>
-      <div class="container d-flex">
-        <div class="navbar d-flex ">
+    <section class="d-flex">
+      <div class="d-flex">
+        <div class="navbar d-flex">
           <div class="bg-body-secondary sideBar">
             <ul class="nav flex-column mb-5">
               <li class="nav-item mb-3">
@@ -162,96 +166,191 @@
             </ul>
           </div>
         </div>
-        <!--      -->
-        <div class="row col-lg-11 col-md-7 text-center ms-5 mt-5 g-4">
-          <div class="col-md" style="border: none; background: none;" >
-            <div class="card bg-body text-black" style="border: none;">
-              <div class="card-body bg-light text-center py-5 shadow" style="border: none; border-radius: 2rem;">
-                <div class="h1 mb-3">
-                  <i class="bi bi-stopwatch bg-info-subtle p-2 text-info-emphasis rounded-4"></i>
-                </div>
-                <h3 class="card-title mb-3">All News</h3>
-                <img src="/Asset/27-removebg-preview.png" class="w-75" alt="">
-                <p class="card-text cardText">+1 this week</p>
-                <p class="card-text cardText2">-4 this week</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md">
-            <div class="card bg-body text-black" style="border: none;">
-              <div class="card-body bg-light text-center py-5 shadow" style="border: none; border-radius: 2rem;">
-                <div class="h1 mb-3">
-                  <i class="bi bi-list bg-success-subtle p-2 text-success rounded-4"></i>
-                </div>
-                <h3 class="card-title mb-3">Headlines</h3>
-                <img src="/Asset/two-removebg-preview.png" class="w-50 m-1" alt="">
-                <p class="card-text cardText mt-4">+1 this week</p>
-                <p class="card-text cardText2">-4 this week</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md">
-            <div class="card bg-body text-black" style="border: none;">
-              <div class="card-body bg-light text-center py-5 shadow" style="border: none; border-radius: 2rem;">
-                <div class="h1 mb-3">
-                  <i class="bi bi-newspaper bg-warning-subtle p-2 text-warning-emphasis rounded-4"></i>
-                </div>
-                <h3 class="card-title mb-3">Latest News</h3>
-                <img src="/Asset/five-removebg-preview.png" class="w-50 m-1" alt="">
-                <p class="card-text cardText mt-4">+1 this week</p>
-                <p class="card-text cardText2">-4 this week</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md">
-            <div class="card bg-body text-black" style="border: none;">
-              <div class="card-body bg-light text-center py-5 shadow" style="border: none; border-radius: 2rem;">
-                <div class="h1 mb-3">
-                  <i class="bi bi-journal bg-primary-subtle p-2 text-primary-emphasis rounded-4"></i>
-                </div>
-                <h3 class="card-title mb-3">More News</h3>
-                <img src="/Asset/number-15-removebg-preview.png" class="w-75" alt="">
-                <p class="card-text cardText">+1 this week</p>
-                <p class="card-text cardText2">-4 this week</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md">
-            <div class="card bg-body text-black" style="border: none;">
-              <div class="card-body bg-light text-center py-5 shadow" style="border: none; border-radius: 2rem;">
-                <div class="h1 mb-3">
-                  <i class="bi bi-person bg-secondary-subtle p-2 text-secondary-emphasis rounded-4"></i>
-                </div>
-                <h3 class="card-title mb-3">Admin</h3>
-                <img src="/Asset/number-12-removebg-preview.png" class="w-75" alt="">
-                <p class="card-text cardText">+1 this week</p>
-                <p class="card-text cardText2">-4 this week</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md">
-            <div class="card bg-body text-black" style="border: none;">
-              <div class="card-body bg-light py-5 text-center shadow" style="border: none; border-radius: 2rem;">
-                <div class="h1 mb-3">
-                  <i class="bi bi-trash bg-danger-subtle p-2 text-danger-emphasis rounded-4"></i>
-                </div>
-                <h3 class="card-title mb-3">Deleted News</h3>
-                <img src="/Asset/37-removebg-preview.png" class="w-75" alt="">
-                <p class="card-text cardText">+1 this week</p>
-                <p class="card-text cardText2">-4 this week</p>
-              </div>
-            </div>
-          </div>
       </div>
+
+
+      <!--  showcase    -->
+      <div>
+        
+      <div class="row col-lg-11 col-md-7 text-center ms-3 mt-5 g-4">
+        <div class="col-md" style="border: none; background: none">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-stopwatch bg-info-subtle p-2 text-info-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">All News</h3>
+              <img src="/Asset/27-removebg-preview.png" class="w-75" alt="" />
+              <p class="card-text cardText">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
         </div>
-       
-      
+
+        <div class="col-md">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-list bg-success-subtle p-2 text-success rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">Headlines</h3>
+              <img
+                src="/Asset/two-removebg-preview.png"
+                class="w-50 m-1"
+                alt=""
+              />
+              <p class="card-text cardText mt-4">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-newspaper bg-warning-subtle p-2 text-warning-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">Latest News</h3>
+              <img
+                src="/Asset/five-removebg-preview.png"
+                class="w-50 m-1"
+                alt=""
+              />
+              <p class="card-text cardText mt-4">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-journal bg-primary-subtle p-2 text-primary-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">More News</h3>
+              <img
+                src="/Asset/number-15-removebg-preview.png"
+                class="w-75"
+                alt=""
+              />
+              <p class="card-text cardText">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-person bg-secondary-subtle p-2 text-secondary-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">Admin</h3>
+              <img
+                src="/Asset/number-12-removebg-preview.png"
+                class="w-75"
+                alt=""
+              />
+              <p class="card-text cardText">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light py-5 text-center shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-trash bg-danger-subtle p-2 text-danger-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">Deleted News</h3>
+              <img src="/Asset/37-removebg-preview.png" class="w-75" alt="" />
+              <p class="card-text cardText">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
       </div>
+<div class="d-flex">
+ <div class="row col-2 col-md-7 text-center ms-3 mt-5 g-4">
+        <div class="col-md" style="border: none; background: none">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-stopwatch bg-info-subtle p-2 text-info-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">All News</h3>
+              <img src="/Asset/27-removebg-preview.png" class="w-75" alt="" />
+              <p class="card-text cardText">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+         <div>
+          <div class="row col-2 col-md-7 text-center ms-3 mt-5 g-4">
+        <div class="col-md" style="border: none; background: none">
+          <div class="card bg-body text-black" style="border: none">
+            <div
+              class="card-body bg-light text-center py-5 shadow"
+              style="border: none; border-radius: 2rem"
+            >
+              <div class="h1 mb-3">
+                <i
+                  class="bi bi-stopwatch bg-info-subtle p-2 text-info-emphasis rounded-4"
+                ></i>
+              </div>
+              <h3 class="card-title mb-3">All News</h3>
+              <img src="/Asset/27-removebg-preview.png" class="w-75" alt="" />
+              <p class="card-text cardText">+1 this week</p>
+              <p class="card-text cardText2">-4 this week</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+         </div>
+</div>
     </section>
   </body>
   <script
